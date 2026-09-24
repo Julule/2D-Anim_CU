@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "CircleActions",
+    "maps": [
+        {
+            "name": "CircleActions",
+            "id": "1db189bc-61ee-40c1-9e89-ea52bf58406b",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "728d137a-036f-4efa-af2c-ddd76f95d5f2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4ab45e27-2909-4902-9415-c982f786c926",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
