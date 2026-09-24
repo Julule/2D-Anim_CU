@@ -471,7 +471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8824102758749700383, guid: 76cd7106703cfb04db2af8d16311f4ff, type: 3}
       propertyPath: m_Name
-      value: Question MArk (1)
+      value: Question Mark 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -480,6 +480,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8824102758749700383, guid: 76cd7106703cfb04db2af8d16311f4ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 727273472}
+    - targetCorrespondingSourceObject: {fileID: 8824102758749700383, guid: 76cd7106703cfb04db2af8d16311f4ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 727273476}
   m_SourcePrefab: {fileID: 100100000, guid: 76cd7106703cfb04db2af8d16311f4ff, type: 3}
 --- !u!1 &727273471 stripped
 GameObject:
@@ -508,64 +511,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1182190732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7404645404243622444, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-  m_PrefabInstance: {fileID: 7126403810851621321}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &1182190738
-PolygonCollider2D:
+--- !u!114 &727273476
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182190732}
+  m_GameObject: {fileID: 727273471}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.2, y: 0.23}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.06488523, y: 0.23092404}
-      - {x: -0.1015141, y: 0.13661194}
-      - {x: -0.07689819, y: 0}
-      - {x: 0.07504997, y: 0}
-      - {x: 0.1005218, y: 0.14196175}
-      - {x: 0.073201805, y: 0.2309241}
-  m_UseDelaunayMesh: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4e7248a1375604098900ccdcf58aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionMarkBehaviour
 --- !u!1001 &1600447863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -804,7 +761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8824102758749700383, guid: 76cd7106703cfb04db2af8d16311f4ff, type: 3}
       propertyPath: m_Name
-      value: Question MArk
+      value: Question Mark
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1025,14 +982,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1656026557448655724, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-      propertyPath: jumpForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1656026557448655724, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-      propertyPath: circleActions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: b7170efd8f37183469d9e547799bf821, type: 3}
     - target: {fileID: 3281722635198120544, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.01
@@ -1073,24 +1022,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3792910337526486128, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7404645404243622444, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
       propertyPath: m_Name
       value: Goomba
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 171781740713987743, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-    - {fileID: 6097897087389890509, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-    - {fileID: 3792910337526486128, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7404645404243622444, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1182190738}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24bf8486806338a43baf83508cbe4883, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
