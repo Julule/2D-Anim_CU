@@ -11,15 +11,19 @@ public class AutoRight : MonoBehaviour
 
     private Collider2D col;
 
+    private SpriteRenderer renderer;
+
     void Awake()
     {
         col = GetComponent<Collider2D>();
+        renderer = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
         AutoRightMove();
         InvertAtEnd();
         CheckCollision();
+        // CheckSpriteFlipX();
 
     }
 
@@ -59,6 +63,7 @@ public class AutoRight : MonoBehaviour
             pointCheckOther = new(col.bounds.max.x + 0.01f, col.bounds.min.y + 0.01f);
             direction = Vector2.right;
         }
+
         else
         {
             pointCheckOther = new(col.bounds.min.x - 0.01f, col.bounds.min.y + 0.01f);
@@ -72,5 +77,11 @@ public class AutoRight : MonoBehaviour
             speed *= -1;
         }
     }
+
+    // private void CheckSpriteFlipX(){
+    //     if (speed <0) {
+    //         renderer.flipX;
+    //     }
+    // }
 
 }
