@@ -13,6 +13,7 @@ public class AutoRight : MonoBehaviour
 
     private SpriteRenderer renderer;
 
+
     void Awake()
     {
         col = GetComponent<Collider2D>();
