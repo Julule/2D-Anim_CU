@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 [RequireComponent(typeof(Animator))]
@@ -18,6 +19,8 @@ public class MovePlayer : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
+    Vector2 startPosition;
+
 
     private void Awake()
     {
@@ -28,12 +31,19 @@ public class MovePlayer : MonoBehaviour
        animator = GetComponent<Animator>();
 
        spriteRenderer = GetComponent<SpriteRenderer>();
+       startPosition = transform.position;
+
     } 
     private void Update()
     {
         if (isOnMove)
         {
             Move();
+        }
+
+        if (transform.position.y < -2)
+        {
+            transform.position = startPosition;
         }
     } 
 
@@ -63,8 +73,8 @@ public class MovePlayer : MonoBehaviour
         spriteRenderer.flipX = mvtSpeed < 0 ;
 
         animator.SetFloat(ANIMATION_SPEED, Mathf.Abs(mvtSpeed));
+
         transform.Translate(mvt);
 
-        
     }
 }
