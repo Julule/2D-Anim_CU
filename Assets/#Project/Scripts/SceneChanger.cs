@@ -16,7 +16,7 @@ public class SceneChanger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        ChangeScene();  
+        ChangeScene();
     }
 
     private void ChangeScene()
